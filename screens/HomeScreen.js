@@ -8,7 +8,7 @@ export default class HomseScreen extends Component() {
       super();
       this.state={
         text:'',
-        isSearchedPressed: false,
+        isSearchPressed: false,
         isLoading: false,
         word: "Loading",
         lexicalCategory:'',
@@ -47,7 +47,7 @@ export default class HomseScreen extends Component() {
             style:{color:'#fff',fontSize:20}
           }}
           />
-        <View style={styles.inputContainer}>
+        <View style={styles.inputBoxContainer}>
 
             <TextInput
                 style={styles.inputBox}
@@ -84,7 +84,7 @@ export default class HomseScreen extends Component() {
                 (
                   <View style={{justifyContent:'center',marginLeft:10}}>
                     <View style={styles.detailContainer}>
-                      <Text style={styles.detailsText}>
+                      <Text style={styles.detailsTitle}>
                         Word:{""}
                       </Text>
                       <Text style={{fontSize:18}}>
@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
     borderWidth:2,
     borderRadius:10
   },
-  searchText:{
+  buttonText:{
     fontSize:20,
     fontWeight:'bold'
   },

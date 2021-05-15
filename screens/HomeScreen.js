@@ -54,7 +54,7 @@ export default class HomseScreen extends Component() {
                 OnChangeText={text => {
                     this.setState({
                         text:text,
-                        isSearchPressd:false,
+                        isSearchPressed:false,
                         word:"Loading...",
                         lexicalCategory:'',
                         definition:""

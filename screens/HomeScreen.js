@@ -3,7 +3,7 @@ import { StyleSheet, Text, View,TextInput,TouchableOpacity } from 'react-native'
 import { Header } from 'react-native-elements';
 import dictionary from '../database';
 
-export default class HomseScreen extends Component() {
+export default class HomeScreen extends Component{
     constructor(){
       super();
       this.state={
@@ -51,7 +51,7 @@ export default class HomseScreen extends Component() {
 
             <TextInput
                 style={styles.inputBox}
-                OnChangeText={text => {
+                onChangeText={text => {
                     this.setState({
                         text:text,
                         isSearchPressed:false,

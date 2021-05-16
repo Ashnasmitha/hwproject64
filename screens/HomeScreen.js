@@ -104,7 +104,7 @@ export default class HomeScreen extends Component{
                         Defintion:{""}
                       </Text>
                       <Text style={{fontSize:18}}>
-                        {this.state.defintion}
+                        {this.state.definition}
                       </Text>
                     </View>
           </View>
